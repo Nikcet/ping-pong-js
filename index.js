@@ -5,6 +5,8 @@ const paddleHeight = grid * 5; // Высота платформы
 const maxPaddleY = canvas.height - grid - paddleHeight; // Максимальное расстояние, на которое может подняться платформа
 let paddleSpeed = 6; // скорость платформы
 let ballSpeed = 5; // скорость мяча
+const delayToPlayWithBall = 2000;
+
 
 // Платформа левая
 const leftPaddle = {
@@ -68,8 +70,8 @@ function loop() {
         leftPaddle.y = maxPaddleY;
     }
 
-    // Рисуем платформы белым цветом
-    context.fillStyle = 'white';
+    // Рисуем платформы цветом
+    context.fillStyle = 'rgb(228, 164, 87)';
     // Каждая платформа — прямоугольник
     context.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
     context.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
@@ -96,7 +98,7 @@ function loop() {
             ball.resetting = false;
             ball.x = canvas.width / 2;
             ball.y = canvas.height / 2;
-        }, 1000);
+        }, delayToPlayWithBall);
     }
 
     // Если мяч коснулся левой платформы,
@@ -116,7 +118,7 @@ function loop() {
     context.fillRect(ball.x, ball.y, ball.width, ball.height);
 
     // Рисуем стены
-    context.fillStyle = 'lightgrey';
+    context.fillStyle = 'rgb(228, 164, 87)';
     context.fillRect(0, 0, canvas.width, grid);
     context.fillRect(0, canvas.height - grid, canvas.width, canvas.height);
 
