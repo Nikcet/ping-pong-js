@@ -7,8 +7,26 @@ body {
 
 body {
     background-color: black;
-    color: rgb(228, 164, 87);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    /* background-color: white; */
+    /* border: 1px solid red; */
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__counter {
+    color: white;
+    font-size: 50px;
+    line-height: 0.5;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+
 }
