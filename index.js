@@ -40,7 +40,7 @@ const ball = {
     isResetted: false
 }
 
-function collidesWallsByPaddles(paddle){ //doesn't let the ball leave the boundaries of the wall
+function collidesWallsByPaddles(paddle){
     if (paddle.y < grid){
         paddle.y = grid;
     }
