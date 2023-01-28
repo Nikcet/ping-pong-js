@@ -4,4 +4,4 @@
 Стек: Vanilla JS (ES6)
 
 
-Ссылка на pages: [Тыц](https://nikcet.github.io/ping-pong-js/).
+Ссылка на pages: [https://nikcet.github.io/ping-pong-js](https://nikcet.github.io/ping-pong-js/).
