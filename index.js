@@ -141,7 +141,6 @@ function loop(){
 
 
 document.addEventListener('keydown', function (event){
-    console.log(event.key);
   if (event.key === 'w' || event.key === 'ц'){
       leftPaddle.dy = -paddleSpeed;
   }
