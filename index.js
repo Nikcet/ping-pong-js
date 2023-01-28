@@ -141,10 +141,11 @@ function loop(){
 
 
 document.addEventListener('keydown', function (event){
-  if (event.key === 'w'){
+    console.log(event.key);
+  if (event.key === 'w' || event.key === 'ц'){
       leftPaddle.dy = -paddleSpeed;
   }
-  else if (event.key === 's'){
+  else if (event.key === 's' || event.key === 'ы'){
       leftPaddle.dy = paddleSpeed;
   }
 });
